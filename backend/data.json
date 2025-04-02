@@ -1,0 +1,25 @@
+{
+  "tshirts": [
+    {
+      "id": 1,
+      "name": "Nike Park VII Jersey",
+      "description": "Le Nike Park VII Jersey est un maillot de football alliant confort et performance. Doté de la technologie Dri-FIT, il évacue la transpiration pour garder la peau au sec. Son tissu léger et respirant assure une aération optimale, tandis que sa coupe ajustée favorise la liberté de mouvement. Son design minimaliste, avec un col en V ou rond selon le modèle, en fait un choix idéal pour l'entraînement et les matchs.",
+      "quantity": 99,
+      "price": 24,
+      "devise": "€",
+      "images": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey",
+      "caracteristiques": [
+        {
+          "gender": "Masculin"
+        },
+        {
+          "colors": ["blue", "green", "purple"]
+        },
+        {
+          "sizes": ["XS", "S", "M", "L", "XL"]
+        }
+      ],
+      "available": true
+    }
+  ]
+}
