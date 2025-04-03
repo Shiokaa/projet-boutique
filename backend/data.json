@@ -7,18 +7,55 @@
       "quantity": 99,
       "price": 24,
       "devise": "€",
-      "images": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey",
-      "caracteristiques": [
-        {
-          "gender": "Masculin"
+      "images": {
+        "default": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_blue.jpg",
+        "blue": {
+          "front": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_blue.jpg",
+          "back": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_blue.jpg"
         },
-        {
-          "colors": ["blue", "green", "purple"]
+        "green": {
+          "front": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_green.jpg",
+          "back": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_green.jpg"
         },
-        {
-          "sizes": ["XS", "S", "M", "L", "XL"]
+        "purple": {
+          "front": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_purple.jpg",
+          "back": "../frontend/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_purple.jpg"
         }
-      ],
+      },
+      "caracteristiques": {
+        "gender": ["Masculin"],
+        "colors": ["blue", "green", "purple"],
+        "sizes": ["XS", "S", "M", "L", "XL"]
+      },
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Jack & Jones Jjecorp",
+      "description": "Le JACK & JONES Jjecorp Logo Tee SS Crew Neck Noos est un t-shirt casual alliant style et confort. Confectionné en coton doux et respirant, il offre une sensation agréable sur la peau. Son col rond classique et sa coupe ajustée garantissent une tenue moderne et polyvalente. Orné du logo emblématique de JACK & JONES, il affiche un design minimaliste idéal pour un look décontracté au quotidien. Parfait pour être porté seul ou sous une veste, il s’adapte à toutes les occasions.",
+      "quantity": 99,
+      "price": 20,
+      "devise": "€",
+      "images": {
+        "default": "../frontend/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_grey.jpg",
+        "grey": {
+          "front": "../frontend/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_grey.jpg",
+          "back": "../frontend/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_grey.jpg"
+        },
+        "green": {
+          "front": "../frontend/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_green.jpg",
+          "back": "../frontend/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_green.jpg"
+        },
+        "orange": {
+          "front": "../frontend/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_orange.jpg",
+          "back": "../frontend/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_orange.jpg"
+        }
+      },
+      "caracteristiques": {
+        "gender": ["Masculin"],
+        "colors": ["blue", "green", "purple"],
+        "sizes": ["XS", "S", "M", "L", "XL"]
+      },
       "available": true
     }
   ]
