@@ -1,5 +1,5 @@
 {
-  "tshirts": [
+  "products": [
     {
       "id": 1,
       "name": "Nike Park VII Jersey",
@@ -8,18 +8,18 @@
       "price": 24.99,
       "devise": "€",
       "images": {
-        "default": "../frontend/assets/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_blue.jpg",
+        "default": "../frontend/assets/img/products/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_blue.jpg",
         "blue": {
-          "front": "../frontend/assets/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_blue.jpg",
-          "back": "../frontend/assets/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_blue.jpg"
+          "front": "../frontend/assets/img/products/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_blue.jpg",
+          "back": "../frontend/assets/img/products/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_blue.jpg"
         },
         "green": {
-          "front": "../frontend/assets/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_green.jpg",
-          "back": "../frontend/assets/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_green.jpg"
+          "front": "../frontend/assets/img/products/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_green.jpg",
+          "back": "../frontend/assets/img/products/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_green.jpg"
         },
         "purple": {
-          "front": "../frontend/assets/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_purple.jpg",
-          "back": "../frontend/assets/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_purple.jpg"
+          "front": "../frontend/assets/img/products/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_purple.jpg",
+          "back": "../frontend/assets/img/products/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_purple.jpg"
         }
       },
       "caracteristiques": {
@@ -37,18 +37,18 @@
       "price": 19.99,
       "devise": "€",
       "images": {
-        "default": "../frontend/assets/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_grey.jpg",
+        "default": "../frontend/assets/img/products/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_grey.jpg",
         "grey": {
-          "front": "../frontend/assets/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_grey.jpg",
-          "back": "../frontend/assets/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_grey.jpg"
+          "front": "../frontend/assets/img/products/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_grey.jpg",
+          "back": "../frontend/assets/img/products/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_grey.jpg"
         },
         "green": {
-          "front": "../frontend/assets/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_green.jpg",
-          "back": "../frontend/assets/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_green.jpg"
+          "front": "../frontend/assets/img/products/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_green.jpg",
+          "back": "../frontend/assets/img/products/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_green.jpg"
         },
         "orange": {
-          "front": "../frontend/assets/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_orange.jpg",
-          "back": "../frontend/assets/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_orange.jpg"
+          "front": "../frontend/assets/img/products/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_orange.jpg",
+          "back": "../frontend/assets/img/products/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_orange.jpg"
         }
       },
       "caracteristiques": {
@@ -61,23 +61,23 @@
     {
       "id": 3,
       "name": "Build Your Brand Ladies",
-      "description": "Le JACK & JONES Jjecorp Logo Tee SS Crew Neck Noos est un t-shirt casual alliant style et confort. Confectionné en coton doux et respirant, il offre une sensation agréable sur la peau. Son col rond classique et sa coupe ajustée garantissent une tenue moderne et polyvalente. Orné du logo emblématique de JACK & JONES, il affiche un design minimaliste idéal pour un look décontracté au quotidien. Parfait pour être porté seul ou sous une veste, il s’adapte à toutes les occasions.",
+      "description": "",
       "quantity": 25,
       "price": 9.99,
       "devise": "€",
       "images": {
-        "default": "../frontend/assets/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_white.jpg",
+        "default": "../frontend/assets/img/products/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_white.jpg",
         "white": {
-          "front": "../frontend/assets/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_white.jpg",
-          "back": "../frontend/assets/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_white.jpg"
+          "front": "../frontend/assets/img/products/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_white.jpg",
+          "back": "../frontend/assets/img/products/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_white.jpg"
         },
         "olive": {
-          "front": "../frontend/assets/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_olive.jpg",
-          "back": "../frontend/assets/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_olive.jpg"
+          "front": "../frontend/assets/img/products/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_olive.jpg",
+          "back": "../frontend/assets/img/products/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_olive.jpg"
         },
         "black": {
-          "front": "../frontend/assets/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_black.jpg",
-          "back": "../frontend/assets/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_black.jpg"
+          "front": "../frontend/assets/img/products/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_black.jpg",
+          "back": "../frontend/assets/img/products/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_black.jpg"
         }
       },
       "caracteristiques": {

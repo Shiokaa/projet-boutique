@@ -1,14 +1,14 @@
 const url = "http://localhost:3000";
 const img = document.querySelector("img");
 
-let color = "white"; // Exemple: couleur sélectionnée par l'utilisateur
+let color = "blue"; // Exemple: couleur sélectionnée par l'utilisateur
 let view = "front"; // Exemple: vue sélectionnée
 
-fetch(`${url}/tshirt`)
+fetch(`${url}/product`)
   .then((response) => response.json())
   .then((data) => {
-    const tshirt = data[3];
-    const images = tshirt.images;
+    const product = data[0];
+    const images = product.images;
     img.src = images[color][view];
   })
   .catch((err) => {
