@@ -41,7 +41,7 @@ git clone https://github.com/Shiokaa/projet-boutique.git
 2. **Ouvrir un terminal dans le dossier du projet**
    <br>
 
-3. **Cloner le dépôt :**
+3. **Installer les dépendances du backend :**
 
 ```bash
 cd backend
