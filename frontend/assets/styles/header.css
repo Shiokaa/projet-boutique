@@ -74,44 +74,86 @@ body {
   border: 1px solid #000;
 }
 
+.novelty {
+  width: 100%;
+  text-align: start;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .product-card {
   position: relative;
-  height: 300px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   flex-direction: column;
-  border: 1px solid #000;
-  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .product-card svg {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  fill: #888;
+  transition: fill 0.2s;
+}
+
+.product-card svg:hover {
+  fill: #e74c3c;
 }
 
 .product-card-img {
-  height: 65%;
   width: 100%;
-  text-align: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  background-color: #f9f9f9;
 }
 
-.product-card img {
-  height: 180px;
-  width: 180px;
+.product-card-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .product-card-details {
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
+  text-align: left;
 }
 
-.product-card-details p {
-  margin-left: 20px;
+.product-card-details p:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.product-card-details p:last-child {
+  font-size: 0.9rem;
+  color: #777;
 }
 
 /* --------------------------- Menu Latéral (Off-screen) --------------------------- */
@@ -188,7 +230,6 @@ header {
   gap: 15px;
 }
 
-/* Animation du texte du menu */
 .menu-text-span {
   display: flex;
   flex-direction: column;
@@ -241,7 +282,6 @@ header {
   transition: 0.3s ease;
 }
 
-/* Position initiale des barres */
 .hamburger-menu span:nth-child(1) {
   top: 30%;
 }
@@ -250,7 +290,6 @@ header {
   top: 70%;
 }
 
-/* Animation en croix lors de l'activation */
 .hamburger-menu.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
@@ -289,4 +328,25 @@ header {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.icon-nav:last-child {
+  position: relative;
+}
+
+.icon-nav:last-child span {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.55rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
