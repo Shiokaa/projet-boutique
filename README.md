@@ -50,22 +50,22 @@ npm install
 
 4. **Démarrer Apache et MySQL via XAMPP (ou équivalent)**
    <br>
-
-5. **Lancer le serveur backend en local :**
-
-```bash
-npm start
-```
-
-6. **Initialiser la base de données :**
+   
+5. **Initialiser la base de données :**
 
 - Ouvrir le fichier migrations.sql situé dans backend/database/migrations
 - Copier son contenu et l’exécuter dans PhpMyAdmin ou un autre outil SQL
 
-7. **Ajouter les données (produits, tailles, couleurs, etc.) :**
+6. **Ajouter les données (produits, tailles, couleurs, etc.) :**
 
 - Ouvrir le fichier insertions.sql situé dans backend/database/insertions
 - Copier son contenu et l’exécuter dans le même script SQL
+
+7. **Lancer le serveur backend en local :**
+
+```bash
+npm start
+```
 
 8. **Lancer le frontend :**
 - Aller dans le dossier frontend/
