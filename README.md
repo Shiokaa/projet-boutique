@@ -68,7 +68,7 @@ npm start
 ```
 
 8. **Lancer le frontend :**
-- Aller sur le navigateur à l'url suivant : [https](http://localhost:3000/home)
+- Aller sur le navigateur à l'url suivant : (http://localhost:3000/home)
 
 ---
 
