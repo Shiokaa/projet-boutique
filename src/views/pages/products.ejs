@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <%- include('../partials/head'); %>
+        <link rel="stylesheet" href="styles/products.css">
+</head>
+
+<body>
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+        <div class="filter-container">
+            <div class="filter">
+                <button>Afficher les filtres</button>
+            </div>
+            <div class="sort">
+                <button>Trier par</button>
+                <div class="sort-choices">
+                    <p>Prix : décroissant</p>
+                    <p>Prix : croissant</p>
+                </div>
+            </div>
+        </div>
+        <div class="products-list"></div>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+</body>
+<script src="scripts/products.js"></script>
+
+</html>

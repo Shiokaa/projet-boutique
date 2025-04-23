@@ -1,0 +1,33 @@
+main {
+  height: 100%;
+  margin-top: 50px;
+  padding: 0 50px 0 50px;
+}
+
+.background-img {
+  width: 100%;
+  padding: 0 50px 50px 50px;
+}
+
+.iconic {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+  gap: 24px;
+  padding: 20px;
+  width: 100%;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products img {
+  height: 20vh;
+}
+
+.redirect-all-products a {
+  text-decoration: underline;
+}
