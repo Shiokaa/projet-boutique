@@ -44,7 +44,7 @@ git clone https://github.com/Shiokaa/projet-boutique.git
 3. **Installer les dépendances du backend :**
 
 ```bash
-cd backend
+cd src
 npm install
 ```
 
@@ -53,12 +53,12 @@ npm install
    
 5. **Initialiser la base de données :**
 
-- Ouvrir le fichier migrations.sql situé dans backend/database/migrations
+- Ouvrir le fichier migrations.sql situé dans src/database/migrations
 - Copier son contenu et l’exécuter dans PhpMyAdmin ou un autre outil SQL
 
 6. **Ajouter les données (produits, tailles, couleurs, etc.) :**
 
-- Ouvrir le fichier insertions.sql situé dans backend/database/insertions
+- Ouvrir le fichier insertions.sql situé dans src/database/insertions
 - Copier son contenu et l’exécuter dans le même script SQL
 
 7. **Lancer le serveur backend en local :**
@@ -68,8 +68,7 @@ npm start
 ```
 
 8. **Lancer le frontend :**
-- Aller dans le dossier frontend/
-- Ouvrir index.html dans un navigateur
+- Aller sur le navigateur à l'url suivant : [https](http://localhost:3000/home)
 
 ---
 
