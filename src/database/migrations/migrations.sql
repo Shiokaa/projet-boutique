@@ -86,6 +86,8 @@ CREATE TABLE favorites (
 CREATE TABLE color_product (
    product_id INT,
    color_id INT,
+   front_img VARCHAR(255) NOT NULL,
+   back_img VARCHAR(255) NOT NULL,
    PRIMARY KEY(product_id, color_id),
    FOREIGN KEY(product_id) REFERENCES products(product_id),
    FOREIGN KEY(color_id) REFERENCES colors(color_id)

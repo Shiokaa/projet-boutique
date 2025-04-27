@@ -12,16 +12,44 @@
     <main>
         <div class="filter-container">
             <div class="filter">
-                <button>Afficher les filtres</button>
+                <button class="filter-toggle">Afficher les filtres</button>
+                <div class="filter-options">
+                    <h3>Filtres</h3>
+                    <div class="filter-group">
+                        <label>
+                            <input type="checkbox" id="filter-homme">
+                            Homme
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <label>
+                            <input type="checkbox" id="filter-femme">
+                            Femme
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <label>
+                            <input type="checkbox" id="filter-nouveaute">
+                            Nouveauté
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <label>
+                            <button class="reset-button">Reinitialiser</button>
+                        </label>
+                    </div>
+                    <button class="apply-filters">Appliquer les filtres</button>
+                </div>
             </div>
             <div class="sort">
                 <button>Trier par</button>
                 <div class="sort-choices">
-                    <p>Prix : décroissant</p>
-                    <p>Prix : croissant</p>
+                    <button class="decroissant">Prix : décroissant</button>
+                    <button class="croissant">Prix : croissant</button>
                 </div>
             </div>
         </div>
+
         <div class="products-list"></div>
     </main>
 

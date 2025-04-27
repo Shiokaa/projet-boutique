@@ -1,39 +1,146 @@
 .filter-container {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  width: 95%;
-  height: 10vh;
-  gap: 40px;
+  align-items: flex-start;
+  margin: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.filter-container button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1rem;
-}
-
+.filter,
 .sort {
   position: relative;
 }
 
-.sort-choices {
-  position: absolute;
-  left: -50px;
-  display: none;
-  width: 150px;
-  height: 60px;
+.filter-toggle {
+  background-color: #3498db;
+  color: #fff;
+  border: 1px solid #3498db;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-toggle:hover {
   background-color: #fff;
-  z-index: 1;
-  border-radius: 10px;
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.filter-options {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 250px;
+}
+
+.filter-options.active {
+  display: flex;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.filter-group input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.apply-filters {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.apply-filters:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.reset-button {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.reset-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.sort > button {
+  background-color: #f39c12;
+  color: #fff;
+  border: 1px solid #f39c12;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sort > button:hover {
+  background-color: #fff;
+  color: #f39c12;
+  border: 1px solid #f39c12;
+}
+
+.sort-choices {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 0;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .sort-choices.active {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+}
+
+.sort-choices button {
+  background: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sort-choices button:hover {
+  background: #eee;
 }
 
 .products-list {

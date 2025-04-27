@@ -21,6 +21,7 @@ function displayProducts(products) {
     productCard.setAttribute("data-id", product_id);
 
     productCard.innerHTML = `
+        <a href="/productpage?id=${product_id}">
           <div class="product-card-img">
             <img src="${default_img}" alt="${name}">
           </div>
@@ -28,6 +29,7 @@ function displayProducts(products) {
             <p>${name}</p>
             <p>${price}€</p>
           </div>
+        </a>
         `;
 
     iconic.appendChild(productCard);

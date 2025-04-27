@@ -7,14 +7,12 @@ exports.getProductById = async (req, res) => {
   const colors = await Product.getProductColorById(id);
   const sizes = await Product.getProductSizeById(id);
   const gender = await Product.getProductGenderById(id);
-  const image = await Product.getProductImageById(id);
 
   const product = {
     ...productItem,
     colors,
     sizes,
     gender,
-    image,
   };
 
   if (!product) {

@@ -1,8 +1,8 @@
 -- Création des valeurs de base (genres, couleurs, tailles)
 INSERT INTO genders (name)
 VALUES
-    ("Masculin"),
-    ("Feminin");
+    ("Homme"),
+    ("Femme");
 
 INSERT INTO colors (name, hexa_code) 
 VALUES 
@@ -17,6 +17,7 @@ VALUES
 
 INSERT INTO sizes (name)
 VALUES
+    ("XXS"),
     ("XS"),
     ("S"),
     ("M"),
@@ -87,21 +88,21 @@ VALUES
     ("http://localhost:3000/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_olive.jpg", 3);
 
 -- Couleurs associées aux produits
-INSERT INTO color_product (product_id, color_id)
+INSERT INTO color_product (product_id, color_id, front_img, back_img)
 VALUES
-    (1, 4), -- Violet
-    (1, 8), -- Bleu
-    (1, 6), -- Vert
-    (2, 5), -- Orange
-    (2, 6), -- Vert
-    (2, 7), -- Gris
-    (3, 1), -- Noir
-    (3, 2), -- Blanc
-    (3, 3); -- Olive
+    (1, 4,"http://localhost:3000/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_purple.jpg","http://localhost:3000/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_purple.jpg"), -- Violet
+    (1, 8, "http://localhost:3000/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_blue.jpg","http://localhost:3000/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_blue.jpg"), -- Bleu
+    (1, 6, "http://localhost:3000/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_front_green.jpg","http://localhost:3000/img/tshirts/Nike_Park_Vii_Jersey/Nike_Park_Vii_Jersey_back_green.jpg"), -- Vert
+    (2, 5, "http://localhost:3000/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_orange.jpg", "http://localhost:3000/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_orange.jpg"), -- Orange
+    (2, 6, "http://localhost:3000/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_green.jpg", "http://localhost:3000/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_green.jpg"), -- Vert
+    (2, 7, "http://localhost:3000/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_front_grey.jpg", "http://localhost:3000/img/tshirts/Jack_&_Jones_Jjecorp/Jack_&_Jones_Jjecorp_back_grey.jpg"), -- Gris
+    (3, 1, "http://localhost:3000/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_black.jpg", "http://localhost:3000/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_black.jpg"), -- Noir
+    (3, 2, "http://localhost:3000/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_white.jpg", "http://localhost:3000/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_white.jpg"), -- Blanc
+    (3, 3, "http://localhost:3000/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_front_olive.jpg", "http://localhost:3000/img/tshirts/Build_Your_Brand_Ladies/Build_Your_Brand_Ladies_back_olive.jpg"); -- Olive
 
 -- Tailles associées aux produits
 INSERT INTO size_product (product_id, size_id)
 VALUES
     (1, 1), (1, 2), (1, 3), (1, 4), (1, 5),
     (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (2, 6),
-    (3, 1), (3, 2), (3, 4);
+    (3, 1), (3, 2), (3, 3), (3, 4), (3, 5);
