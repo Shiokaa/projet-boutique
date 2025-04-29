@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <%- include('../partials/head'); %>
+        <link rel="stylesheet" href="styles/cart.css">
+</head>
+
+<body>
+    <header><%- include('../partials/header'); %></header>
+
+    <main class="cart-container">
+        <h1 class="cart-title">Votre Panier</h1>
+
+        <section class="cart-items">
+            <!-- Ici tu vas insérer dynamiquement les produits du panier avec JS -->
+        </section>
+
+        <section class="cart-summary">
+            <div class="summary-details">
+                <p class="total-label">Total :</p>
+                <p class="total-amount">0 €</p>
+            </div>
+            <button class="checkout-btn">Passer la commande</button>
+        </section>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+</body>
+<script src="scripts/cart.js"></script>
+
+</html>

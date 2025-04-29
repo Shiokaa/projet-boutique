@@ -1,0 +1,129 @@
+/* Mise en page globale */
+.cart-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  height: 70vh;
+}
+
+/* Titre principal */
+.cart-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Liste des articles */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Un article */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Détail à gauche */
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Image du produit */
+.item-info img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Détails du texte */
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-color-size {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Quantité + prix */
+.item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.item-quantity {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Résumé panier */
+.cart-summary {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+/* Total */
+.summary-details {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+/* Bouton commander */
+.checkout-btn {
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* Delete button */
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d4f;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}

@@ -5,6 +5,8 @@ const overlay = document.querySelector(".overlay");
 const offScreenSearchBar = document.querySelector(".off-screen-search-bar");
 const searchBar = document.querySelector(".search-bar");
 const closeIcon = document.querySelector(".close-icon");
+const cartItemNbr = document.querySelector(".cart-item-number");
+const products = JSON.parse(localStorage.getItem("product")) || [];
 
 hamburgerMenu.addEventListener("click", addActive);
 overlay.addEventListener("click", removeActive);
@@ -15,6 +17,8 @@ searchBar.addEventListener("click", () => {
 closeIcon.addEventListener("click", () => {
   offScreenSearchBar.classList.remove("active");
 });
+
+cartItemNbr.textContent = products.length;
 
 function addActive() {
   offScreenMenu.classList.toggle("active");

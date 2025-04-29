@@ -28,9 +28,13 @@ app.get("/products", function (req, res) {
   res.render("pages/products");
 });
 
-app.get("/productpage", function (req,res){
-  res.render("pages/product")
-})
+app.get("/productpage", function (req, res) {
+  res.render("pages/product");
+});
+
+app.get("/cart", function (req, res) {
+  res.render("pages/cart");
+});
 
 // ROUTES
 app.use(productRoute);
