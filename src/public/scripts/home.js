@@ -1,4 +1,4 @@
-const iconic = document.querySelector(".iconic");
+const iconics = document.querySelector(".iconic");
 
 async function fetchProducts() {
   try {
@@ -15,24 +15,26 @@ async function fetchProducts() {
 }
 
 function displayProducts(products) {
-  products.forEach(({ product_id, name, price, default_img }) => {
-    const productCard = document.createElement("div");
-    productCard.classList.add("product-card");
-    productCard.setAttribute("data-id", product_id);
+  products.forEach(({ product_id, name, price, default_img, iconic }) => {
+    if (iconic) {
+      const productCard = document.createElement("div");
+      productCard.classList.add("product-card");
+      productCard.setAttribute("data-id", product_id);
 
-    productCard.innerHTML = `
-        <a href="/productpage?id=${product_id}">
-          <div class="product-card-img">
-            <img src="${default_img}" alt="${name}">
-          </div>
-          <div class="product-card-details">
-            <p>${name}</p>
-            <p>${price}€</p>
-          </div>
-        </a>
-        `;
+      productCard.innerHTML = `
+          <a href="/productpage?id=${product_id}">
+            <div class="product-card-img">
+              <img src="${default_img}" alt="${name}">
+            </div>
+            <div class="product-card-details">
+              <p>${name}</p>
+              <p>${price}€</p>
+            </div>
+          </a>
+          `;
 
-    iconic.appendChild(productCard);
+      iconics.appendChild(productCard);
+    }
   });
 }
 

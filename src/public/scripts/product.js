@@ -5,6 +5,7 @@ const id = urlParams.get("id");
 // Sélection des éléments principaux
 const main = document.querySelector("main");
 const addToCartBtn = document.querySelector(".add-to-cart");
+const heartIcon = document.querySelector(".heart-icon");
 
 // --- Fonction principale ---
 async function fetchProduct() {
@@ -28,6 +29,17 @@ function initializeProductPage(product) {
 
   addToCartBtn.addEventListener("click", (_) => {
     addToCart(product);
+  });
+
+  const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  const isFavorite = favorites.some((item) => item.id === product.product_id);
+
+  if (isFavorite) {
+    heartIcon.style.fill = "#ff0000";
+  }
+
+  heartIcon.addEventListener("click", () => {
+    toggleFavorite(product);
   });
 }
 
@@ -184,6 +196,8 @@ function setupImages(product) {
       <img class="thumb" src="${color.back_img}" alt="Miniature image du produit">
     `;
   }
+
+  setupCarousel();
 }
 
 // --- Gérer le carrousel d'images ---
@@ -215,6 +229,28 @@ function setupCarousel() {
   thumbs.forEach((thumb, index) => {
     thumb.addEventListener("click", () => updateCarousel(index));
   });
+}
+
+// --- Gérer les favorits
+function toggleFavorite(product) {
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  const index = favorites.findIndex((item) => item.id === product.product_id);
+
+  if (index !== -1) {
+    favorites.splice(index, 1);
+    heartIcon.style.fill = "#000";
+  } else {
+    const favoriteToAdd = {
+      id: product.product_id,
+      name: product.name,
+      price: product.price,
+      img: product.colors[0].front_img,
+    };
+    favorites.push(favoriteToAdd);
+    heartIcon.style.fill = "#ff0000";
+  }
+
+  localStorage.setItem("favorites", JSON.stringify(favorites));
 }
 
 // Lancer la récupération du produit au chargement

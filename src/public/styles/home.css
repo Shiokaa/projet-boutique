@@ -10,9 +10,8 @@ main {
 }
 
 .iconic {
-  height: 40vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   padding: 20px;
   width: 100%;

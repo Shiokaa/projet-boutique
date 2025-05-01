@@ -31,7 +31,6 @@ function displayCartItems() {
         <button class="delete-btn" data-index="${index}">❌</button>
       </div>
     `;
-
     cartItems.appendChild(cartItem);
   });
 
@@ -96,5 +95,4 @@ function updateCartTotal(items) {
   totalElement.textContent = `${totalAmount.toFixed(2)} €`;
 }
 
-// Appelle la fonction pour afficher le panier au chargement
 displayCartItems();

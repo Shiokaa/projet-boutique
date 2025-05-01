@@ -4,7 +4,7 @@ class Product {
   static async getAllProduct() {
     try {
       const query = `
-      SELECT p.product_id, p.name, p.description, p.price, p.default_img, p.quantity, p.available, p.novelty, g.name AS gender FROM products AS p
+      SELECT p.product_id, p.name, p.description, p.price, p.default_img, p.quantity, p.available, p.novelty, p.iconic, p.categorie, g.name AS gender FROM products AS p
       JOIN genders AS g ON p.gender_id = g.gender_id
       `;
       const [results] = await pool.query(query);

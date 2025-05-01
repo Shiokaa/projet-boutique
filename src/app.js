@@ -9,6 +9,7 @@ app.use(
     origin: "*",
   })
 );
+
 // STATIC FILES
 app.use(express.static("public"));
 app.use("/styles", express.static(__dirname + "public/styles"));
@@ -34,6 +35,10 @@ app.get("/productpage", function (req, res) {
 
 app.get("/cart", function (req, res) {
   res.render("pages/cart");
+});
+
+app.get("/favorites", function (req, res) {
+  res.render("pages/favorites");
 });
 
 // ROUTES

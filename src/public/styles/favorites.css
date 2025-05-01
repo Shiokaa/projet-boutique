@@ -1,0 +1,88 @@
+/* Mise en page globale */
+.favorites-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  height: 70vh;
+}
+
+/* Titre principal */
+.favorites-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Liste des produits favoris */
+.favorites-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Un produit favori */
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Détail à gauche */
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Image du produit */
+.item-info img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Détails du texte */
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-color-size {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Actions pour le produit favori */
+.favorite-item-actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.view-product-btn {
+  text-decoration: underline;
+}
+
+.remove-favorite-btn {
+  padding: 6px 12px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-favorite-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
