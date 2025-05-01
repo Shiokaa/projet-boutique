@@ -11,7 +11,6 @@ L’objectif est de proposer une boutique en ligne complète et fonctionnelle po
 - 🔍 **Recherche par mots-clés**
 - 🧼 **Filtrage dynamique des produits**
 - 📄 **Page détaillée pour chaque produit**
-- 🧑‍💻 **Inscription et connexion des utilisateurs**
 - ⭐ **Ajout de produits aux favoris**
 - 🧭 **Navigation fluide et ergonomique**
 
